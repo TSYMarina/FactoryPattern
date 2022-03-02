@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FactoryPattern
 {
-    internal class HaveFur : IAnimals
+    internal class FurryAnimals : IAnimals
     {
         public static void Furries()
         {
@@ -15,8 +15,7 @@ namespace FactoryPattern
 
         public void BeHungry()
         {
-            Console.WriteLine("Please get some tuna fish for your new kitty.");
+            Console.WriteLine("Cat is hungry");
         }
-
     }
 }

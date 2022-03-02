@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace FactoryPattern
 {
-    public interface IAnimals
+    public class Birds : IAnimals
     {
-        public void BeHungry();
+        
+        public void BeHungry()
+        {
+            Console.WriteLine("Bird is hungry");
+        }
     }
 }

@@ -6,9 +6,11 @@ namespace FactoryPattern
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("What kind of coat should your animal have?");
+            string coatType = Console.ReadLine();
 
-            IAnimals myNewAnimal = AnimalHabitat.AnimalFinder();
-            myNewAnimal.BeHungry();
+            IAnimals animalHabitat = AnimalFactory.AnimalFinder(coatType);
+            animalHabitat.BeHungry();
         }
     }
 }
